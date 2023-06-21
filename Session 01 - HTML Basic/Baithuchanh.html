@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài thực hành</title>
+  </head>
+
+  <body>
+    <!-- Khi sử dụng thẻ block bọc các thẻ inline:
+    => Vẫn sẽ hiển thị theo inline nhưng nếu độ rộng của màn hình 
+    không đủ sẽ bị xuống dòng
+    -->
+    <div>
+      <span>Hello World 1</span>
+      <span>Hello World 1</span>
+      <span>Hello World 1</span>
+      <span>Hello World 1</span>
+      <span>Hello World 1</span>
+      <span>Hello World 1</span>
+      <span>Hello World 1</span>
+      <span>Hello World 1</span>
+      <span>Hello World 1</span>
+      <span>Hello World 8</span>
+      <span>Hello World 9</span>
+      <u>Hello World 2</u>
+    </div>
+
+    <!-- Khi sử dụng thẻ inline bọc thẻ block 
+    => sẽ bị ảnh hưởng bởi tính chất của thẻ block
+    -->
+    <span>
+      <div>Rikkei Academy1</div>
+      <div>Rikkei Academy2</div>
+    </span>
+
+    <!-- Thẻ block bọc thẻ inline + block 
+    => sẽ giữ nguyên tính chất của các thẻ
+    -->
+    <div>
+      <span>Lớp PT06</span>
+      <span>Lớp PT06</span>
+      <div>Chúc các bạn học tập tốt</div>
+    </div>
+
+    <!-- Thẻ inline bọc thẻ inline + block
+    => sẽ giữ nguyên tính chất của các thẻ
+    -->
+
+    <span>
+      <span>Hello world 1</span>
+      <span>Hello world 2</span>
+      <div>Hello world 2</div>
+    </span>
+  </body>
+</html>
