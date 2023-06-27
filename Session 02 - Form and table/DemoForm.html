@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo Form</title>
+</head>
+
+<body>
+  <div>Buổi 2 - Form</div>
+  <!-- ctrl + s => để lưu code -->
+
+  <!-- 
+    Thẻ form hay còn gọi là biểu mẫu
+    được sử dụng để lấy thông tin người dùng, làm form đăng nhập, đăng ký, ...
+    -->
+
+  <!-- 
+      Thẻ input: được sử dụng để cho người dùng nhập vào
+      Thẻ button: được sử dụng để tạo nút cho người click
+
+      Các thuộc tính (attribule) trong thẻ form (thường được viết trong thẻ mở):
+      + action: Thường là đường dẫn để có thể gửi dữ liệu
+      + id, name: Dùng để định danh cho thẻ form
+      + method: Dùng để xác định phương thức gửi cho form (get / post)
+      + enctype: Dùng để xác định kiểu mã hóa gửi lên server
+      => Các thuộc tính có thể có hoặc không trong thẻ form
+    -->
+
+  <form action="./DemoForm.html" id="dangnhap" name="dangnhap" method="get">
+    Email: <input type="email" />
+    <br />
+    Password: <input type="text" />
+    <br />
+    <button type="submit">Click me !!!</button>
+    <button type="reset">Reset</button>
+  </form>
+
+  <!-- javascript -->
+
+  <h2>Các thẻ input trong HTML</h2>
+  input với text: <input type="text" placeholder="Nhập text"> <br />
+  input với number: <input type="number" min="0"> <br />
+  input với email: <input type="email"> <br />
+  input với password <input type="password"> <br />
+  input với hidden <input type="hidden"> <br />
+  input với checkbox <input type="checkbox"> <br />
+  input với radio <input type="radio" name="gioitinh"> <br />
+  input với radio <input type="radio" name="gioitinh"> <br />
+  input với button <input type="button"> <br />
+  input với image <input type="image"> <br />
+  input với submit <input type="submit"> <br />
+  input với reset <input type="reset"> <br />
+  input với file <input type="file"> <br />
+  input với color <input type="color"> <br />
+  input với date <input type="date"> <br />
+  input với datetime-local <input type="datetime-local"> <br />
+  input với month <input type="month"> <br />
+  input với time <input type="time"> <br />
+  input với range <input type="range"> <br />
+
+  <!-- select-option
+  là bộ thẻ đi với nhau để xây dựng giao diện giúp người dùng có chọn được danh sách
+  -->
+  <h2>Select option</h2>
+  <select>
+    <option value="">Hà Nội</option>
+    <option value="">HCM</option>
+    <option value="">Đà Nẵng</option>
+  </select>
+
+  <textarea name="" id="" cols="60" rows="5" placeholder="Nhập đoạn text"></textarea>
+
+</body>
+
+</html>
