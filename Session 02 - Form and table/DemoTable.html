@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Demo Table</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body>
-
+  <body>
     <!-- Table -->
     <!-- 
         + <table>: Định nghĩa bảng
@@ -21,40 +23,41 @@
         + <tr>: xác định dòng của bảng
         + <td>: xác định cột của bảng 
     -->
-    <table border="1" align="center" cellpadding="5" cellspacing="5" width="500" height="200">
-        <!-- Tên của bảng -->
-        <caption>Bảng Nhân Viên</caption>
+    <table border="1" align="center" cellpadding="5" width="500" height="200">
+      <!-- Tên của bảng -->
+      <caption>
+        Bảng Nhân Viên
+      </caption>
 
-        <!-- Xác định phần đầu của bảng -->
-        <thead bgcolor="green">
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Age</th>
-                <th>Email</th>
-            </tr>
-        </thead>
+      <!-- Xác định phần đầu của bảng -->
+      <thead bgcolor="green">
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Email</th>
+        </tr>
+      </thead>
 
-        <!-- Xác định phần nội dung có trong bảng -->
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Vũ Hồng</td>
-                <td>26</td>
-                <td>vuhong@gmail.com</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td width="150" height="150">Hiệp Phạm</td>
-                <td>18</td>
-                <td>hiep@gmail.com</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td colspan="3">Tổng tiền: 2.000.000</td>
-
-            </tr>
-        </tbody>
+      <!-- Xác định phần nội dung có trong bảng -->
+      <tbody cellspacing="50">
+        <tr cellspacing="50">
+          <td cellspacing="50">1</td>
+          <td>Vũ Hồng</td>
+          <td>26</td>
+          <td>vuhong@gmail.com</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td width="150" height="150">Hiệp Phạm</td>
+          <td>18</td>
+          <td>hiep@gmail.com</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td colspan="3">Tổng tiền: 2.000.000</td>
+        </tr>
+      </tbody>
     </table>
 
     <!-- Các thuộc tính (Attribule) có trong table -->
@@ -77,7 +80,5 @@
     <i class="fa-solid fa-house"></i>
     <i class="fa-brands fa-twitter"></i>
     <i class="fa-solid fa-user"></i>
-
-</body>
-
+  </body>
 </html>
