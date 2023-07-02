@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Session 04 - CSS</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <style>
+    p {
+      color: red;
+    }
+
+    article {
+      color: green;
+    }
+  </style>
+
+  <body>
+    <h2>Session 04 - CSS</h2>
+    <!-- 
+        Các cách sử dụng css:
+        Cách 1: - Inline: khai báo trực tiếp trong thẻ html
+        + Cú pháp: <ten_the style=""> noi dung </ten_the>
+        Cách 2: - Internal: Khai báo trong cặp thẻ <style></style>
+        + Cú pháp: <style> Đoạn mã css </style>
+        Cách 3: - External: Khai báo qua file có phần mở rộng là .css
+            + Bước 1: Tạo file có phần mở rộng là .css
+            + Bước 2: Link file .css vào html
+            + Bước 3: style
+    -->
+
+    <div style="color: rgb(174, 202, 60)">Hello World 1 - Sử dụng Inline</div>
+    <p>Hello World 2 - Sử dụng Internal</p>
+    <span>Hello World 3 - Sử dụng External</span>
+
+    <!-- 
+        Độ ưu tiên trong css
+    + Inline => Internal và External (Ai khai báo sau sẽ được gọi sau) => Kiểu mặc định của trình duyệt
+    + !important => sẽ được ưu tiên tuyệt đối
+    -->
+    <article style="color: red">Độ ưu tiên trong CSS</article>
+  </body>
+</html>

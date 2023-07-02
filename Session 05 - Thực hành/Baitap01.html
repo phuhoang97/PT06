@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai tap 01</title>
+  </head>
+  <style>
+    /* Lưu ý khi sử dụng css. Cần phải reset lại các thuộc tính css */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 60%;
+      margin: 20px 0 0 20px;
+    }
+
+    h3 {
+      color: rgb(0, 85, 166);
+    }
+
+    .content-header {
+      margin-top: 20px;
+    }
+
+    .content-body {
+      background-color: rgb(254, 250, 238);
+      margin-top: 10px;
+    }
+
+    .content-body p {
+      padding-top: 10px;
+      padding-left: 10px;
+    }
+
+    .col-left {
+      background-color: rgb(225, 204, 73);
+      padding-left: 10px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <!-- Vùng đầu tiên -->
+      <div>
+        <h3>5. Groups of selector</h3>
+        <p class="content-header">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, hic
+          culpa. Inventore soluta animi et placeat saepe quae blanditiis est in
+          numquam cupiditate modi voluptas non, aliquam laborum ut impedit
+          commodi nostrum incidunt iste dolorum dignissimos earum, harum sint?
+          Sit!
+        </p>
+      </div>
+
+      <!-- Vùng thứ hai -->
+      <div class="col-left">
+        <div class="content-body">
+          <p>CSS example</p>
+          <p>
+            In this example , we condense three rules with identical declaration
+            into one. Thus,
+          </p>
+          <p>h1 { font-family: sans-serif }</p>
+          <p>h2 { font-family: sans-serif }</p>
+          <p>h3 { font-family: sans-serif }</p>
+
+          <p>is equivalent to:</p>
+          <p>h1, h2, h3 { font-family: sans-serif }</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

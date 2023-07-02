@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai tap 02</title>
+  </head>
+
+  <style>
+    /* Set lại css mặc định cho các thẻ */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container{
+        margin: 20px 0 0 20px;
+        width: 60%;
+    }
+
+    .content-one{
+        margin-left: 10px;
+    }
+
+    .text-align-content {
+        color: rgb(176, 14, 46);
+        background-color: rgb(246, 245, 245);
+    }
+
+    .content-text {
+        height: 30px;
+        border: 2px solid green;
+        text-align: center;
+        padding-top: 15px;
+        margin-top: 10px;
+    }
+
+    .content-two {
+        margin-top: 20px;
+        background-color: rgb(229, 232, 237);
+        padding: 10px 10px;
+    }
+
+    .content-text-two {
+        background-color: white;
+        border-left: 3px solid rgb(5, 172, 109);
+    }
+
+    .content-text-two p {
+        padding-left: 10px;
+    }
+
+    .content-text-two p span {
+        color: blue;
+    }
+
+    .span-text {
+        color: red;
+    }
+
+    button {
+        background-color: rgb(8, 170, 111);
+        color: white;
+        margin-top: 10px;
+        width: 20%;
+        height: 30px;
+        border: none;
+        border-radius: 5px;
+    }
+    
+  </style>
+  <body>
+    <div class="container">
+      <!-- Vùng thứ nhất -->
+      <div class="content-one">
+        <h2>Center Align Text</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur,
+          <span class="text-align-content">text - align: center;</span>
+          <div class="content-text">This text is centered</div>
+        </p>
+      </div>
+      <!-- Vùng thứ hai -->
+      <div class="content-two">
+        <h3 style="margin: 10px 0;">Example</h3>
+        <div class="content-text-two">
+            <p>
+                <span style="color: rgb(164, 74, 82);">.center</span> { <br/>
+                <a class="span-text">text-align:</a> <span>center</span> <br/>
+                <a class="span-text">border: </a> <span>3px solid green</span> <br/>
+            }
+        </p>
+        </div>
+
+        <button>Try it Yourself</button>
+
+      </div>
+    </div>
+  </body>
+</html>

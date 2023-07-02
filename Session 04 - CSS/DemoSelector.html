@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo Selector</title>
+  </head>
+  <style>
+    /* * {
+      color: blueviolet;
+    } */
+    /* div {
+      color: red;
+    } */
+
+    /* Khi gọi với id #ten_id{} */
+    #demo-seletor {
+      font-size: 50px;
+    }
+    /* Khi gọi thẻ với class .ten_class{} */
+    .demo-class {
+      background-color: antiquewhite;
+    }
+
+    /* ul li {
+      color: aquamarine;
+    }
+
+    div p {
+      color: brown;
+    } */
+
+    /* div,
+    span {
+      color: rgb(194, 242, 98);
+    } */
+    /* div + p {
+      color: rgb(232, 44, 203);
+    } */
+
+    /* div > span {
+      color: aqua;
+    } */
+
+    /* .demo-class {
+      color: pink;
+    } */
+
+    /* #demo-class {
+      color: rgb(236, 55, 85);
+    } */
+
+    /* div:after {
+      content: "hello";
+    }
+    div:hover {
+      background-color: aquamarine;
+    }
+    div:active {
+      color: rgb(66, 104, 104);
+    }
+    input:focus {
+      background-color: azure;
+    } */
+  </style>
+  <body>
+    <h2>Demo Seletor</h2>
+    <!-- 
+        Các bộ chọn trong css:
+        + Tag name: gọi tên thẻ
+        + Id: Gọi thẻ qua id => định danh thẻ đó là duy nhất
+        + Class: Gọi thẻ qua class => có thể gọi được nhiều thẻ nếu trùng tên class
+        + *: gọi tất cả => thường được sử dụng để set lại mặc định cho trang web
+        + tag => Nếu cùng loại thẻ thì sẽ đều có thuộc tính css đó
+        + tag01 tag02 => sẽ chọn tất cả thành phần có trong tag02
+        + tag01, tag02 => sẽ chọn tất cả thành phần có trong tag01 và tag02
+        + tag01 + tag02 => sẽ chọn thẻ tag02 kế tiếp
+        + tag01 > tag02 => sẽ chọn tất cả có trong tag02
+
+    -->
+
+    <!-- <div id="demo-seletor" class="demo-class">Demo Seletor</div>
+    <div>Demo Seletor 2</div>
+    <div>Demo Seletor 3</div> -->
+
+    <!-- Ví dụ về tag01 tag02 -->
+    <!-- <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+    </ul> -->
+
+    <!-- <div>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <span>Lorem ipsum dolor sit amet consectetur.</span>
+    </div> -->
+
+    <!-- Ví dụ về tag01, tag02 -->
+    <!-- <div>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+      <span>Lorem ipsum dolor sit, amet consectetur adipisicing.</span>
+      <div>Lorem ipsum dolor sit.</div>
+    </div> -->
+
+    <!-- Ví dụ về tag01 + tag02 -->
+    <!-- <div>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+      <span>Lorem ipsum dolor sit, amet consectetur adipisicing.</span>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <span>Lorem ipsum dolor sit amet consectetur.</span> -->
+
+    <!-- Ví dụ về tag01 > tag02 -->
+    <!-- <div>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+      <p>
+        <span>Lorem ipsum dolor sit, amet consectetur adipisicing.</span>
+      </p>
+    </div> -->
+
+    <!-- Ví dụ về class -->
+    <!-- <div>
+      <p class="demo-class">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+      </p>
+      <span class="demo-class">Lorem ipsum dolor sit.</span>
+      <section class="demo-class">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      </section>
+    </div> -->
+
+    <!-- Ví dụ về id -->
+    <!-- <div>
+      <p id="demo-class">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+      </p>
+      <span id="demo-class">Lorem ipsum dolor sit.</span>
+      <section id="demo-class">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      </section>
+    </div> -->
+
+    <!-- :after, :hover :active :focur -->
+    <!-- <a href="#">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+      nesciunt!
+    </a>
+    <input type="text" /> -->
+  </body>
+</html>
