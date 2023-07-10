@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai tap 02</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    ul {
+      list-style: none;
+    }
+    .plans {
+      margin: 30px auto;
+      width: 1200px;
+    }
+
+    .plans h2 {
+      margin-bottom: 20px;
+      font-size: 45px;
+    }
+
+    .content {
+      margin-bottom: 15px;
+    }
+
+    .left-ground {
+      float: left;
+      width: 460px;
+      margin-bottom: 40px;
+    }
+
+    .left-ground h3 {
+      margin: 20px 0;
+    }
+
+    .right-ground {
+      float: right;
+      width: 660px;
+    }
+
+    .img-left {
+      width: 450px;
+      height: 200px;
+    }
+
+    /* Style right-ground chill */
+
+    .infor-list li {
+      border-bottom: 1px dashed red;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+    }
+
+    .infor-list li .image {
+      float: left;
+      width: 100px;
+    }
+
+    .infor-list li .detail {
+      float: right;
+      width: 520px;
+      padding-top: 3px;
+    }
+
+    .clear-fix::after {
+      clear: both;
+      content: ".";
+      display: block;
+      height: 0;
+      line-height: 0;
+      visibility: hidden;
+    }
+  </style>
+  <body>
+    <section class="plans">
+      <h2>Issues & Plans</h2>
+      <p class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+        cupiditate aliquid quas a placeat. Distinctio officiis ipsum saepe
+        beatae molestiae.
+      </p>
+
+      <div class="clear-fix">
+        <!-- Vùng bên trái -->
+        <div class="left-ground">
+          <p><img class="img-left" src="./images/image.png" alt="" /></p>
+          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+            dolor sit qui pariatur illum enim sapiente, cupiditate consectetur
+            unde praesentium.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime,
+            illo! Eius et iure sunt nemo culpa?
+          </p>
+        </div>
+        <!-- Kết thúc vùng bên trái -->
+
+        <!-- Vùng bên phải -->
+        <div class="right-ground">
+          <ul class="infor-list">
+            <!-- Phần 1 -->
+            <li class="clear-fix">
+              <!-- Vùng trái -->
+              <div class="image">
+                <img src="./images/Screenshot 2023-07-04 161129.png" alt="" />
+              </div>
+
+              <!-- Vùng phải -->
+              <section class="detail">
+                <h3>Lorem, ipsum.</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officia aliquid, distinctio incidunt quaerat iusto similique
+                  voluptates quidem quo veritatis, ipsum, illum cumque.
+                </p>
+              </section>
+            </li>
+
+            <!-- Phần 2 -->
+            <li class="clear-fix">
+              <!-- Vùng trái -->
+              <div class="image">
+                <img src="./images/Screenshot 2023-07-04 161129.png" alt="" />
+              </div>
+
+              <!-- Vùng phải -->
+              <section class="detail">
+                <h3>Lorem, ipsum.</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officia aliquid, distinctio incidunt quaerat iusto similique
+                  voluptates quidem quo veritatis, ipsum, illum cumque.
+                </p>
+              </section>
+            </li>
+
+            <!-- Phần 3 -->
+            <li class="clear-fix">
+              <!-- Vùng trái -->
+              <div class="image">
+                <img src="./images/Screenshot 2023-07-04 161129.png" alt="" />
+              </div>
+
+              <!-- Vùng phải -->
+              <section class="detail">
+                <h3>Lorem, ipsum.</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officia aliquid, distinctio incidunt quaerat iusto similique
+                  voluptates quidem quo veritatis, ipsum, illum cumque.
+                </p>
+              </section>
+            </li>
+          </ul>
+        </div>
+        <!-- Kết thúc vùng bên phải -->
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai tap 01</title>
+  </head>
+  <style>
+    /* Reset  */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Bỏ dấu chấm trong thẻ ul */
+    ul {
+      list-style: none;
+    }
+
+    /* Style cho body */
+    body {
+      color: rgb(197, 201, 203);
+      font-size: 16px;
+      line-height: 1.8;
+      /* Tăng khoảng cách các chữ lên 1.8 (tương đối)  */
+    }
+
+    /* Style cho cha */
+    .infor-list {
+      margin: 30px auto;
+      width: 660px;
+      padding: 33px;
+    }
+
+    /* Style cho thẻ li có border, margin, padding */
+    .infor-list li {
+      border-bottom: 1px dashed red;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+    }
+
+    /* style cho vùng trái */
+    .infor-list li .image {
+      float: left;
+      width: 100px;
+    }
+
+    /* style cho vùng bên phải */
+    .infor-list li .detail {
+      float: right;
+      width: 520px;
+      padding-top: 3px;
+    }
+
+    .clear-fix::after {
+      clear: both;
+      content: ".";
+      display: block;
+      height: 0;
+      line-height: 0;
+      visibility: hidden;
+    }
+  </style>
+  <body>
+    <ul class="infor-list">
+      <!-- Phần 1 -->
+      <li class="clear-fix">
+        <!-- Vùng trái -->
+        <div class="image">
+          <img src="./images/Screenshot 2023-07-04 161129.png" alt="" />
+        </div>
+
+        <!-- Vùng phải -->
+        <section class="detail">
+          <h3>Lorem, ipsum.</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+            aliquid, distinctio incidunt quaerat iusto similique voluptates
+            quidem quo veritatis, ipsum, illum cumque.
+          </p>
+        </section>
+      </li>
+
+      <!-- Phần 2 -->
+      <li class="clear-fix">
+        <!-- Vùng trái -->
+        <div class="image">
+          <img src="./images/Screenshot 2023-07-04 161129.png" alt="" />
+        </div>
+
+        <!-- Vùng phải -->
+        <section class="detail">
+          <h3>Lorem, ipsum.</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+            aliquid, distinctio incidunt quaerat iusto similique voluptates
+            quidem quo veritatis, ipsum, illum cumque.
+          </p>
+        </section>
+      </li>
+
+      <!-- Phần 3 -->
+      <li class="clear-fix">
+        <!-- Vùng trái -->
+        <div class="image">
+          <img src="./images/Screenshot 2023-07-04 161129.png" alt="" />
+        </div>
+
+        <!-- Vùng phải -->
+        <section class="detail">
+          <h3>Lorem, ipsum.</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+            aliquid, distinctio incidunt quaerat iusto similique voluptates
+            quidem quo veritatis, ipsum, illum cumque.
+          </p>
+        </section>
+      </li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Học Flex-box</title>
+  </head>
+
+  <!-- 
+    - Để sử dụng được flexbox => display: flex
+    - Các thuộc tính có trong flexbox:
+
+        + flex-direction: row (ngang) / column (dọc) => mặc định là chiều ngang (row)
+        còn column-reverse / row-reverse thì được sử dụng để item ngược hướng với hướng ban đầu
+
+        + justify-content: để căn các phần tử theo chiều ngang (main axis)
+        flex-end, flex-start, center, space-between, space-around, space-evenly, ...
+
+        + align-items: Để căn các phần tử theo chiều dọc (cross axis)
+        flex-end, flex-start, center
+
+        -----------------------------------
+        + sử dụng flexbox
+        + flex
+        + flex-direction
+        + justify-content
+        + align-items
+        + flex-basis
+        + order
+
+   -->
+
+  <style>
+    .container {
+      background-color: rgb(172, 226, 208);
+      height: 500px;
+      margin-top: 20px;
+      display: flex;
+      /* flex-direction: row-reverse; */
+      /* justify-content: center;
+      align-items: center; */
+    }
+
+    .item {
+      width: 100px;
+      height: 100px;
+      background-color: rgb(179, 44, 44);
+      margin: 10px;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo Layout Flex-box</title>
+  </head>
+  <style>
+    .container {
+      background-color: antiquewhite;
+      margin-top: 50px;
+      padding: 15px;
+      display: flex;
+    }
+
+    .layout-item {
+      border: 1px solid black;
+    }
+    .layout-one {
+      flex: 1;
+    }
+    .layout-two {
+      flex: 1;
+    }
+    .layout-three {
+      flex: 1;
+    }
+    /* khi trong các phần con mà phần tử nào có giá trị là flex lớn hơn thì sẽ được chiếm gấp đôi width của các phẩn tử */
+  </style>
+  <body>
+    <div class="container">
+      <div class="layout-item layout-one">
+        <h2>Layout one</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
+          deserunt impedit at. Maxime impedit illo ipsa, reiciendis totam omnis,
+          facilis minus labore quaerat quis sapiente vero tenetur consequuntur
+          mollitia quos, quisquam officiis perspiciatis vitae ab! Laudantium
+          adipisci accusamus ipsum accusantium? Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Beatae deserunt impedit at. Maxime
+          impedit illo ipsa, reiciendis totam omnis, facilis minus labore
+          quaerat quis sapiente vero tenetur consequuntur mollitia quos,
+          quisquam officiis perspiciatis vitae ab! Laudantium adipisci accusamus
+          ipsum accusantium?
+        </p>
+      </div>
+
+      <div class="layout-item layout-two">
+        <h2>Layout two</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
+          deserunt impedit at. Maxime impedit illo ipsa, reiciendis totam omnis,
+          facilis minus labore quaerat quis sapiente vero tenetur consequuntur
+          mollitia quos, quisquam officiis perspiciatis vitae ab! Laudantium
+          adipisci accusamus ipsum accusantium?
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
+          deserunt impedit at. Maxime impedit illo ipsa, reiciendis totam omnis,
+          facilis minus labore quaerat quis sapiente vero tenetur consequuntur
+          mollitia quos, quisquam officiis perspiciatis vitae ab! Laudantium
+          adipisci accusamus ipsum accusantium?
+        </p>
+      </div>
+
+      <div class="layout-item layout-three">
+        <h2>Layout three</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
+          deserunt impedit at. Maxime impedit illo ipsa, reiciendis totam omnis,
+          facilis minus labore quaerat quis sapiente vero tenetur consequuntur
+          mollitia quos, quisquam officiis perspiciatis vitae ab! Laudantium
+          adipisci accusamus ipsum accusantium?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

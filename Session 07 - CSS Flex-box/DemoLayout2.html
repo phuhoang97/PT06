@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo Layout Flex-box</title>
+  </head>
+  <style>
+    .container {
+      /* background-color: antiquewhite; */
+      margin-top: 50px;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .layout-item {
+      border: 1px solid black;
+      flex-basis: 30%;
+      padding: 16px;
+    }
+
+    .layout-item:nth-child(1) {
+      background-color: rgb(69, 69, 183);
+    }
+    .layout-item:nth-child(2) {
+      background-color: rgb(50, 180, 74);
+    }
+    .layout-item:nth-child(3) {
+      background-color: rgb(196, 183, 50);
+    }
+
+    /* Resposive trang web */
+
+    /*  800 > x < 700    */
+
+    @media screen and (max-width: 800px) and (min-width: 700px) {
+      .container {
+        color: white;
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 992px) {
+      .layout-item {
+        flex-direction: row;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      .layout-item {
+        flex-direction: row;
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="layout-item">
+        <h2>Layout one</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
+          deserunt impedit at. Maxime impedit illo ipsa, reiciendis totam omnis,
+          facilis minus labore quaerat quis sapiente vero tenetur consequuntur
+          mollitia quos, quisquam officiis perspiciatis vitae ab! Laudantium
+          adipisci accusamus ipsum accusantium? Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Beatae deserunt impedit at. Maxime
+          impedit illo ipsa, reiciendis totam omnis, facilis minus labore
+          quaerat quis sapiente vero tenetur consequuntur mollitia quos,
+          quisquam officiis perspiciatis vitae ab! Laudantium adipisci accusamus
+          ipsum accusantium?
+        </p>
+      </div>
+
+      <div class="layout-item">
+        <h2>Layout two</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
+          deserunt impedit at. Maxime impedit illo ipsa, reiciendis totam omnis,
+          facilis minus labore quaerat quis sapiente vero tenetur consequuntur
+          mollitia quos, quisquam officiis perspiciatis vitae ab! Laudantium
+          adipisci accusamus ipsum accusantium?
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
+          deserunt impedit at. Maxime impedit illo ipsa, reiciendis totam omnis,
+          facilis minus labore quaerat quis sapiente vero tenetur consequuntur
+          mollitia quos, quisquam officiis perspiciatis vitae ab! Laudantium
+          adipisci accusamus ipsum accusantium?
+        </p>
+      </div>
+
+      <div class="layout-item">
+        <h2>Layout three</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
+          deserunt impedit at. Maxime impedit illo ipsa, reiciendis totam omnis,
+          facilis minus labore quaerat quis sapiente vero tenetur consequuntur
+          mollitia quos, quisquam officiis perspiciatis vitae ab! Laudantium
+          adipisci accusamus ipsum accusantium?
+        </p>
+      </div>
+
+      <!-- <div class="layout-item">
+        <h2>Layout three</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
+          deserunt impedit at. Maxime impedit illo ipsa, reiciendis totam omnis,
+          facilis minus labore quaerat quis sapiente vero tenetur consequuntur
+          mollitia quos, quisquam officiis perspiciatis vitae ab! Laudantium
+          adipisci accusamus ipsum accusantium?
+        </p>
+      </div> -->
+    </div>
+  </body>
+</html>
