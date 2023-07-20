@@ -186,3 +186,48 @@
 // ];
 
 // console.log(arrNumbers[0][2]);
+
+// let arr = [4, 2, 9, 5, 1];
+
+// for (let i = 0; i < arr.length - 1; i++) {
+//   for (let j = i + 1; j < arr.length; j++) {
+//     if (arr[i] > arr[j]) {
+//       let temp = arr[i];
+//       arr[i] = arr[j];
+//       arr[j] = temp;
+//     }
+//   }
+// }
+
+// console.log("Mảng sau khi sắp xếp:", arr);
+
+// let a = [1, 2, 3, 4, 5];
+// let b = [6];
+// if (b == a) {
+//   console.log("true");
+// } else {
+//   console.log("false");
+// }
+// // Cach 2
+// // let number = [1, 2, 3, 4, 5];
+// // let searchNumber = number.includes(30);
+// console.log(searchNumber);
+
+let data1 = [
+  [2, 1],
+  [1000, 10],
+  [3, 23],
+  [30, 21],
+];
+
+console.log("data trước sort", data1);
+
+data1.sort((a, b) => b[0] - a[0]); // Sorting based on the first element of each sub-array
+
+console.log("data sau sort", data1);
+
+let data2 = [5, 10, 15, 7, 80, 3, 1];
+console.log("data trước khi sort", data2);
+
+data2.sort((a, b) => a - b);
+console.log("data sau khi sort", data2);
