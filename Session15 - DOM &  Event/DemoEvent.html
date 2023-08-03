@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo Event</title>
+  </head>
+  <body>
+    <button onclick="greeting()">Click me !!!</button>
+    <select onchange="handleChange()">
+      <option value="HTML">HTML</option>
+      <option value="CSS">CSS</option>
+      <option value="JS">JS</option>
+    </select>
+    <script>
+      // Sự kiện onclick => sử dụng khi click chuột
+      function greeting() {
+        alert("Xin chào !!!");
+      }
+
+      // Sự kiện onchange => sử dụng khi có sự thay đổi
+      function handleChange() {
+        let select = document.querySelector("select");
+        let selectValue = select.value;
+        alert(`Khóa học bạn chọn là ${selectValue}`);
+      }
+    </script>
+  </body>
+</html>

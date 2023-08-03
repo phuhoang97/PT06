@@ -97,67 +97,104 @@
 // sum(30, 30);
 
 // Bài tập 2: Tạo và gọi hàm
-function message(e) {
-  let result = "";
-  if (e) {
-    result = "Có giá trị";
-  } else {
-    result = "Không có gì";
-  }
+// function message(e) {
+//   let result = "";
+//   if (e) {
+//     result = "Có giá trị";
+//   } else {
+//     result = "Không có gì";
+//   }
 
-  return console.log(result);
-}
+//   return console.log(result);
+// }
 
-message();
+// message();
 
-function processConfirm(answer) {
-  let result = "";
-  console.log(answer);
-  if (answer) {
-    result = "Excellent. We'll play a nice game of chess.";
-  } else {
-    result = "Maybe later then.";
-  }
-  return result;
-}
+// function processConfirm(answer) {
+//   let result = "";
+//   console.log(answer);
+//   if (answer) {
+//     result = "Excellent. We'll play a nice game of chess.";
+//   } else {
+//     result = "Maybe later then.";
+//   }
+//   return result;
+// }
 
-let confirmAnswer = confirm("Shall we play a game?"); // ok
-let theAnswer = processConfirm(confirmAnswer); // true
-alert(theAnswer);
+// let confirmAnswer = confirm("Shall we play a game?"); // ok
+// let theAnswer = processConfirm(confirmAnswer); // true
+// alert(theAnswer);
 
-let arr1 = [];
+// let arr1 = [];
 
-function minValue(arr) {
-  if (arr.length === 0) {
-    return "mảng rỗng";
-  }
+// function minValue(arr) {
+//   if (arr.length === 0) {
+//     return "mảng rỗng";
+//   }
 
-  let min = arr[0];
-  for (let i = 1; i < arr.length; i++) {
-    if (arr[i] < min) {
-      min = arr[i];
-    }
-  }
-  return min;
-}
+//   let min = arr[0];
+//   for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] < min) {
+//       min = arr[i];
+//     }
+//   }
+//   return min;
+// }
 
-console.log(minValue(arr1));
+// console.log(minValue(arr1));
 
-let number = 12;
-function isPrime(n) {
-  if (n === 1) {
-    return false;
-  } else if (n === 2) {
-    return true;
-  } else {
-    for (let i = 3; i < n; i++) {
-      if (n % i === 0) {
-        return false;
-      }
+// let number = 12;
+// function isPrime(n) {
+//   if (n === 1) {
+//     return false;
+//   } else if (n === 2) {
+//     return true;
+//   } else {
+//     for (let i = 3; i < n; i++) {
+//       if (n % i === 0) {
+//         return false;
+//       }
 
-      return true;
-    }
-  }
-}
+//       return true;
+//     }
+//   }
+// }
 
-console.log(isPrime(number));
+// console.log(isPrime(number));
+
+// function countOccurrences(inputArray) {
+//   const counts = {};
+//   for (const element of inputArray) {
+//     counts[element] = (counts[element] || 0) + 1;
+//   }
+//   for (const key in counts) {
+//     console.log(`${key}: ${counts[key]}`);
+//   }
+// }
+
+// const inputArray = [1, 1, 2, 2, 2, 3, 3, 3, 3, 4];
+// countOccurrences(inputArray);
+
+// function maxSubarraySum(arr) {
+//   let maxSum = arr[0];
+//   let currentSum = arr[0];
+
+//   for (let i = 1; i < arr.length; i++) {
+//     currentSum = Math.max(arr[i], currentSum + arr[i]);
+//     maxSum = Math.max(maxSum, currentSum);
+//   }
+
+//   return maxSum;
+// }
+
+// const array = [-2, 1, -3, 4, -1, 2, 1, -5, 4];
+// console.log(maxSubarraySum(array)); // Output: 6 (from [4, -1, 2, 1])
+
+// let arr = [1, 1, 2, 2, 2, 3, 3, 3, 4, 4];
+
+// let newArr = arr.reduce((initial, element) => {
+//   initial[element] = (initial[element] || 0) + 1;
+//   return initial;
+// }, {});
+
+// console.log(newArr);
