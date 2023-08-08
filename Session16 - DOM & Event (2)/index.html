@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM & Event</title>
+  </head>
+  <style>
+    /* CSS bài tập 6 */
+    #toggle-block {
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+    }
+
+    .toggleClass {
+      display: none;
+    }
+  </style>
+  <body>
+    <!-- Bài tập 1 -->
+    <!-- <button onclick="changeBackgroundColor()">Thay đổi màu nền</button> -->
+
+    <!-- Sử dụng addEventListen -->
+    <button id="btn-change">Thay đổi màu nền</button>
+
+    <!-- Bài tập 2 -->
+    <p id="content">Welcome RA !!!</p>
+    <button onclick="changeText()">Thay đổi nội dung</button>
+
+    <!-- Bài tập 3 -->
+    <p id="zoomText">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nulla?
+    </p>
+    <button onclick="zoomIn()">Phóng to</button>
+    <button onclick="zoomOut()">Thu nhỏ</button>
+
+    <br />
+    <br />
+    <!-- Bài tập 5 -->
+    <input type="text" id="userInput" placeholder="Nhập dữ liệu" />
+    <button onclick="showMessage()">Hiển thị thông báo</button>
+    <br />
+    <br />
+
+    <!-- Bài tập 6: Làm chức năng ẩn hiển 1 khối -->
+    <button id="btn-toggle">Ẩn/Hiển khối</button>
+    <div id="toggle-block">Bài tập 6</div>
+
+    <script src="./ChuabaitapDOM.js"></script>
+  </body>
+</html>

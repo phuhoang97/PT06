@@ -112,3 +112,123 @@
 
 // ulList.appendChild(liChild);
 
+// Bài tập 1:
+// Tạo một HTML gồm một nút. Sử dụng JavaScript để thay đổi màu nền của trang web khi người dùng nhấn vào nút.
+// Chữa bài:
+// function changeBackgroundColor() {
+//   document.body.style.backgroundColor = getRandomColorRGB();
+// }
+
+// function getRandomColorRGB() {
+//   const r = Math.floor(Math.random() * 256);
+//   const g = Math.floor(Math.random() * 256);
+//   const b = Math.floor(Math.random() * 256);
+//   return `rgb(${r}, ${g}, ${b})`;
+// }
+
+// Bài tập 2:
+// Tạo một HTML với một đoạn văn bản và một nút. Sử dụng JavaScript để thay đổi
+// nội dung của đoạn văn bản thành "Chào bạn!" khi người dùng nhấn nút.
+
+// function changeText() {
+//   document.getElementById("content").innerText = "Chào bạn!";
+// }
+
+// let isChanged = false;
+
+// function changeText() {
+//   const contentElement = document.getElementById("content");
+//   if (isChanged) {
+//     contentElement.innerText = "Đoạn văn bản ban đầu.";
+//   } else {
+//     contentElement.innerText = "Chào bạn!";
+//   }
+//   isChanged = !isChanged;
+// }
+
+// Bài tập 3:
+// Tạo một HTML với một đoạn văn bản và hai nút "Phóng to" và "Thu nhỏ".
+// Sử dụng JavaScript để thay đổi kích thước của đoạn văn bản khi người dùng nhấn vào các nút này.
+
+// let currentFontSize = 16;
+
+// function zoomIn() {
+//   currentFontSize += 2;
+//   document.getElementById("content").style.fontSize = currentFontSize + "px";
+// }
+
+// function zoomOut() {
+//   currentFontSize -= 2;
+//   document.getElementById("content").style.fontSize = currentFontSize + "px";
+// }
+
+// Bài tập 4:
+// Tạo một HTML với một danh sách các mục. Sử dụng JavaScript để thêm một lớp CSS cho mỗi mục
+// trong danh sách khi người dùng di chuột qua mục đó.
+// function highlightItem(item) {
+//   item.classList.add("highlighted");
+// }
+
+// function unhighlightItem(item) {
+//   item.classList.remove("highlighted");
+// }
+
+// Bài tập 5:
+// Tạo một HTML với một ô input và một nút. Sử dụng JavaScript để hiển thị
+// thông báo "Bạn đã nhập: [giá trị nhập vào]" khi người dùng nhập dữ liệu và nhấn nút.
+// function showMessage() {
+//   const userInput = document.getElementById("userInput").value;
+//   alert("Bạn đã nhập: " + userInput);
+// }
+
+// B1: Lấy được nội dung ở trong ô input
+// Viết sự kiện onclick cho btn:
+
+const form = document.getElementById("main-form");
+const todoList = document.getElementById("todo-list");
+
+form.onsubmit = function (event) {
+  event.preventDefault();
+  //   console.log("Hello");
+  // B1: Lấy được nội dung trong ô input
+  //   console.log(todoInput.value);
+  const inputValue = form.todoValue.value;
+  //   console.log(inputValue);
+  // B2: Tạo ra thẻ li có cấu trúc giống li con của thẻ ul
+  const li = document.createElement("li");
+  li.classList.add("list-item");
+  // B3: Append nội dung của ô input cho thẻ li vừa được tạo
+  li.innerText = inputValue;
+  // B3-2: Thêm button ở mỗi ô input
+  const button = document.createElement("button");
+  //   console.log(button);
+  button.classList.add("btn");
+  button.classList.add("btn-danger");
+  button.innerText = "Delete";
+  // B3-3:append nút vào thẻ li
+  li.appendChild(button);
+  // B4: Gọi thẻ ul ra, append li làm con của thẻ ul đó
+  todoList.appendChild(li);
+  //   button.onclick = function () {
+  //     li.remove();
+  //   };
+};
+
+todoList.onclick = function (e) {
+  //   console.log(e.target); // ủy quyền sự kiện onlick
+
+  if (e.target.classList.contains("btn-danger")) {
+    e.target.parentElement.remove();
+  }
+
+  const btn = e.target.children[0];
+
+  if (e.target.classList.contains("list-item")) {
+    if (e.target.style.textDecoration !== "line-through") {
+      e.target.style.textDecoration = "line-through";
+    } else {
+      e.target.style.textDecoration = "none";
+    }
+    btn.style.textDecoration = "";
+  }
+};

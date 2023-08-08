@@ -6,32 +6,79 @@
     <title>DOM</title>
     <!-- <link rel="stylesheet" href="./style.css" /> -->
   </head>
+  <style>
+    .completed {
+      text-decoration: line-through;
+    }
+  </style>
   <body>
     <!-- Sử dụng với id -->
-    <div id="app"><b>Hello World</b></div>
+    <!-- <div id="app"><b>Hello World</b></div> -->
 
     <!-- Sử dụng với class -->
-    <div class="div-1">Hello 1</div>
-    <div class="div-1">Hello 2</div>
+    <!-- <div class="div-1">Hello 1</div>
+    <div class="div-1">Hello 2</div> -->
 
     <!-- querySelector -->
-    <div class="myDiv">
+    <!-- <div class="myDiv">
       <p class="greeting">Welcome RA !!!</p>
-    </div>
+    </div> -->
 
     <!-- querySelectorAll -->
-    <div>
+    <!-- <div>
       <p class="myClass">Nội dung 1</p>
       <p class="myClass">Nội dung 2</p>
       <p class="myClass">Nội dung 3</p>
-    </div>
+    </div> -->
 
     <!-- children, parentElement -->
-    <ul id="list" class="cl1 cl2 cl3">
+    <!-- <ul id="list" class="cl1 cl2 cl3">
       <li>Homework</li>
       <li>Sleep</li>
       <li>Warn up</li>
-    </ul>
+    </ul> -->
+
+    <!-- Bài 1 -->
+    <!-- <button onclick="changeBackgroundColor()">Thay đổi màu nền</button> -->
+
+    <!-- Bài 2 -->
+    <!-- <p id="content">Đoạn văn bản ban đầu.</p>
+    <button onclick="changeText()">Thay đổi nội dung</button> -->
+
+    <!-- Bài 3 -->
+    <!-- <p id="content" style="font-size: 16px">Đoạn văn bản ban đầu.</p>
+    <button onclick="zoomIn()">Phóng to</button>
+    <button onclick="zoomOut()">Thu nhỏ</button> -->
+
+    <!-- Bài 4 -->
+    <!-- <ul>
+      <li onmouseover="highlightItem(this)" onmouseout="unhighlightItem(this)">
+        Mục 1
+      </li>
+      <li onmouseover="highlightItem(this)" onmouseout="unhighlightItem(this)">
+        Mục 2
+      </li>
+      <li onmouseover="highlightItem(this)" onmouseout="unhighlightItem(this)">
+        Mục 3
+      </li>
+    </ul> -->
+
+    <!-- Bài 5 -->
+    <!-- <input type="text" id="userInput" placeholder="Nhập dữ liệu" />
+    <button onclick="showMessage()">Hiển thị thông báo</button> -->
+
+    <!-- TodoList -->
+    <h1>Todo List</h1>
+    <form id="main-form">
+      <input
+        type="text"
+        id="todoInput"
+        name="todoValue"
+        placeholder="Thêm công việc mới"
+      />
+      <button class="btn btn-success">Add</button>
+    </form>
+    <ul id="todo-list" class="contains"></ul>
 
     <script src="./app.js"></script>
   </body>
